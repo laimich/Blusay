@@ -1,1 +1,2 @@
-# Blusay-Mood Listener
+# Blusay
+Mobile Android Application: Mood Listener
