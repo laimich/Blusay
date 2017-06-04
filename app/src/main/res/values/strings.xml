@@ -1,3 +1,26 @@
 <resources>
+    <!-- general info -->
     <string name="app_name">Blusay</string>
+
+    <!-- initial screen -->
+    <string name="signInLabel">Log in</string>
+    <string name="signUpLabel">Sign up</string>
+    <string name="localUserLabel">Continue as local user</string>
+
+    <!-- sign up screen -->
+    <string name="signUpNamePrompt">Enter name</string>
+    <string name="signUpAltPrompt">Enter alternative or username</string>
+    <string name="signUpPassPrompt">Enter password</string>
+    <string name="signUpRePassPrompt">Re-enter password</string>
+    <string name="signUpNameOptPrompt">Refer as name or username?</string>
+    <string name="signUpOptNamePrompt">Name</string>
+    <string name="signUpOptUsernamePrompt">Username</string>
+
 </resources>
+
+
+<!-- note: use onClick for buttons changing screens, otherwise assign/use id -->
+
+<!-- for initial xml: make custom text style for name, logo/background
+                java: fill on change screen listeners -->
+<!-- for sign up xml: should have one bottom button or multiple?, put picture at the top of screen? -->

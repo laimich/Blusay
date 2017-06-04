@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    >
+    <TextView
+        android:id="@+id/signUpScreenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create account"
+        android:textSize="40sp"
+        android:textColor="@color/darkBlue"
+        android:textStyle="italic"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_below="@id/signUpScreenLabel"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        >
+        <EditText
+            android:id="@+id/signUpDesiredName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signUpNamePrompt"
+            android:textColor="@color/auburn"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:onClick="removeText"
+
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/signUpDesiredAlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signUpAltPrompt"
+            android:textColor="@color/auburn"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:onClick="removeText"
+
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signUpNameOptPrompt"
+            android:textColor="@color/auburn"
+            android:textAlignment="center"
+            android:textSize="18sp"
+
+            android:layout_marginTop="20dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/signUpDesiredOpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/signUpOptNamePrompt"
+                android:textColor="@color/darkGreen"
+                android:buttonTint="@color/darkGreen"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/signUpOptUsernamePrompt"
+                android:textColor="@color/darkGreen"
+                android:buttonTint="@color/darkGreen"
+                />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/signUpDesiredPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signUpPassPrompt"
+            android:textColor="@color/auburn"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:onClick="removeText"
+
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/signUpDesiredRePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signUpRePassPrompt"
+            android:textColor="@color/auburn"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:onClick="removeText"
+
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick=""
+        android:background="@color/darkGreen"
+        android:textColor="@color/white"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        />
+</RelativeLayout>
