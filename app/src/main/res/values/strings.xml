@@ -3,9 +3,11 @@
     <string name="app_name">Blusay</string>
 
     <!-- initial screen -->
-    <string name="signInLabel">Log in</string>
-    <string name="signUpLabel">Sign up</string>
+    <string name="signInLabel">Password log in</string>
+    <string name="signUpLabel">Password sign up</string>
     <string name="localUserLabel">Continue as local user</string>
+    <string name="passwordLogInPrompt">Enter username</string>
+    <string name="passwordSignInPrompt">Enter password</string>
 
     <!-- sign up screen -->
     <string name="signUpNamePrompt">Enter name</string>
@@ -22,5 +24,6 @@
 <!-- note: use onClick for buttons changing screens, otherwise assign/use id -->
 
 <!-- for initial xml: make custom text style for name, logo/background
-                java: fill on change screen listeners -->
+                java: fill on change screen listeners,
+                        problem with clicking log in, then cant go back to initial screen showing of buttons-->
 <!-- for sign up xml: should have one bottom button or multiple?, put picture at the top of screen? -->

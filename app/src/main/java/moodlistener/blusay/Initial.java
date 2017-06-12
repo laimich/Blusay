@@ -21,6 +21,7 @@ public class Initial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.initial);
 
+        //for continue as local user
         Button enterLocalUser = (Button) findViewById(R.id.initialLocalUser);
         enterLocalUser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,13 +30,79 @@ public class Initial extends AppCompatActivity {
             }
         });
 
+        //for password sign up
+        Button signUp = (Button) findViewById(R.id.initialMemberSignUp);
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Initial.this, SignUp.class));
+            }
+        });
+
+        //for password sign in
+        Button signIn = (Button) findViewById(R.id.initialMemberLogIn);
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Hide the buttons for log in/sign up
+                Button logInButton = (Button) findViewById(R.id.initialMemberLogIn);
+                Button signUpButton = (Button) findViewById(R.id.initialMemberSignUp);
+                logInButton.setVisibility(View.GONE);
+                signUpButton.setVisibility(View.GONE);
+
+                //Show text fields for logging in
+                EditText passwordLogIn = (EditText) findViewById(R.id.initialPasswordLogIn);
+                EditText passwordSignUp = (EditText) findViewById(R.id.initialPasswordSignUp);
+                passwordLogIn.setVisibility(View.VISIBLE);
+                passwordSignUp.setVisibility(View.VISIBLE);
+
+                //Change the label for the bottom button for logging in
+                Button continueButton = (Button) findViewById(R.id.initialLocalUser);
+                continueButton.setText("Log in");
+                continueButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        println("go to main screen with password info");
+                    }
+                });
+            }
+        });
+
+        EditText passwordLogIn = (EditText) findViewById(R.id.initialPasswordLogIn);
+        passwordLogIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        EditText passwordSignUp = (EditText) findViewById(R.id.initialPasswordSignUp);
     }
 
-    public void goToSignIn(View view) {
+    /** public void goToSignIn(View view) {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                println("go to sign in screen");
+                //Hide the buttons for log in/sign up
+                Button logInButton = (Button) findViewById(R.id.initialMemberLogIn);
+                Button signUpButton = (Button) findViewById(R.id.initialMemberSignUp);
+                logInButton.setVisibility(View.GONE);
+                signUpButton.setVisibility(View.GONE);
+
+                //Show text fields for logging in
+                EditText passwordLogIn = (EditText) findViewById(R.id.initialPasswordLogIn);
+                EditText passwordSignUp = (EditText) findViewById(R.id.initialPasswordSignUp);
+                passwordLogIn.setVisibility(View.VISIBLE);
+                passwordSignUp.setVisibility(View.VISIBLE);
+
+                //Change the label for the bottom button for logging in
+                Button continueButton = (Button) findViewById(R.id.initialLocalUser);
+                continueButton.setText("Log in");
+                continueButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        println("go to main screen with password info");
+                    }
+                });
             }
         });
     }
@@ -44,10 +111,11 @@ public class Initial extends AppCompatActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                println("go to sign up screen");
+                startActivity(new Intent(Initial.this, SignUp.class));
             }
         });
     }
+     **/
 
     public void removeText(View view) {
         view.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +123,11 @@ public class Initial extends AppCompatActivity {
             public void onClick(View v) {
                 try {
                     EditText editView = (EditText) v;
-                    editView.setText("");
+                    String currentText = editView.getText().toString();
+                    if (currentText.toLowerCase().contains("enter"))
+                    {
+                        editView.setText("");
+                    }
                 }
                 catch (Exception e) {
                     println("exception");
