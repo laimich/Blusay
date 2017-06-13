@@ -5,11 +5,18 @@
     <!-- initial screen -->
     <string name="signInLabel">Password log in</string>
     <string name="signUpLabel">Password sign up</string>
-    <string name="localUserLabel">Continue as local user</string>
+    <string name="localUserLabel">Continue as unlocked user</string>
     <string name="passwordLogInPrompt">Enter username</string>
     <string name="passwordSignInPrompt">Enter password</string>
 
     <!-- sign up screen -->
+    <string name="signUpMoreInfo">
+        •\tMake a locked account that must be accessed with a username and password\n
+        •\tOne unlocked account and unlimited locked accounts \nare allowed per device\n
+        •\tAll accounts are available only to the local device.
+
+    </string>
+    <string name="signUpMainLabel">Create account</string>
     <string name="signUpNamePrompt">Enter name</string>
     <string name="signUpAltPrompt">Enter alternative or username</string>
     <string name="signUpPassPrompt">Enter password</string>
@@ -17,13 +24,18 @@
     <string name="signUpNameOptPrompt">Refer as name or username?</string>
     <string name="signUpOptNamePrompt">Name</string>
     <string name="signUpOptUsernamePrompt">Username</string>
+    <string name="signUpCheckConfirmButton">Confirm</string>
+
+    <!-- main menu screen -->
+    <string name="mainMenuPrompt">How are you?</string>
 
 </resources>
 
 
-<!-- note: use onClick for buttons changing screens, otherwise assign/use id -->
-
 <!-- for initial xml: make custom text style for name, logo/background
-                java: fill on change screen listeners,
+                java: fill on change screen listeners for continue local/continue locked user,
                         problem with clicking log in, then cant go back to initial screen showing of buttons-->
-<!-- for sign up xml: should have one bottom button or multiple?, put picture at the top of screen? -->
+<!-- for sign up xml: put picture at the top of screen?
+                java: do confirm,
+                        must check username available in local device and passwords match
+                        then give error and stay screen OR next screen and save all user info into a new account -->

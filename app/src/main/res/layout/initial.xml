@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="@color/lightBlue"
     >
-
     <Button
         android:id="@+id/initialLocalUser"
         android:layout_width="match_parent"
@@ -47,9 +46,11 @@
             android:id="@+id/initialPasswordLogIn"
             android:layout_width="185dp"
             android:layout_height="50dp"
-            android:text="@string/passwordLogInPrompt"
+            android:inputType="textPassword"
+            android:hint="@string/passwordLogInPrompt"
+            android:textColorHint="@color/darkGreen"
             android:textColor="@color/darkGreen"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:foreground="@drawable/simple_border"
             android:visibility="gone"
 
@@ -71,9 +72,11 @@
             android:id="@+id/initialPasswordSignUp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/passwordSignInPrompt"
+            android:inputType="textPassword"
+            android:hint="@string/passwordSignInPrompt"
+            android:textColorHint="@color/darkGreen"
             android:textColor="@color/darkGreen"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:foreground="@drawable/simple_border"
             android:visibility="gone"
 
