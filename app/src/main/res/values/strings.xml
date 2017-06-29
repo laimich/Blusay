@@ -29,7 +29,7 @@
     <!-- main menu screen -->
     <string name="mainMenuPrompt">How are you?</string>
     <string name="mainMenuReminderLabel">Reminders</string>
-    <string name="mainMenuReminderContext">No current reminders\n.\nend\ntest</string>
+    <string name="mainMenuReminderContext">No current reminders\n.\nend</string>
 
     <string-array name="mainMenuMoodNames">
         <item>Mood1</item>

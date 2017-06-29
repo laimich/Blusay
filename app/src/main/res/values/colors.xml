@@ -3,16 +3,17 @@
     <!-- <color name="lightBlue">#dc90bbcf</color> -->
     <!-- <color name="darkBlue2">#3e5982</color> -->
     <!-- <color name="lightRed">#d9e8a1a4</color> -->
-    <color name="darkBlue">#e7081146</color>
     <color name="lightBlue">#dfb9d6d5</color>
+    <color name="darkBlue">#e7081146</color>
+    <color name="lightGreen">#fa1d8175</color>
     <color name="darkGreen">#fa03413a</color>
     <color name="teal">#92B7A6</color>
     <color name="darkTeal">#6C9682</color>
+    <color name="lightAuburn">#e4b76f5f</color>
     <color name="auburn">#A36659</color>
-    <color name="lightAuburn">#c8897c</color>
 
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
-    <color name="grey">#888888</color>
+    <color name="grey">#6c6c6c</color>
 
 </resources>
