@@ -356,12 +356,6 @@
                     android:layout_alignParentLeft="true"
                     />
             </RelativeLayout>
-
-            <!--
-                 TODO: put log out buttom at top left
-                 TODO: put reminder section at  top of main menu -->
-
-
         </RelativeLayout>
     </ScrollView>
 
