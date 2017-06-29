@@ -16,7 +16,7 @@ public class Mood {
     private String description;
     private ArrayList<Response> responseChoices;
         //returns all types of responses under the specific mood
-    private ArrayList<ResponseSaveData> savedEntries;
+   // private ArrayList<ResponseSaveData> savedEntries;
         //used in settings for getting saved entries that have already been filled out
 
     //for slider options, level of each

@@ -4,13 +4,12 @@
     android:layout_height="match_parent"
     android:background="@color/lightBlue"
     >
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/signUpScreenLabel"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
 
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         >
 
         <TextView
@@ -20,6 +19,8 @@
             android:textSize="40sp"
             android:textColor="@color/darkBlue"
             android:textStyle="italic"
+
+            android:layout_centerHorizontal="true"
             />
 
         <ImageButton
@@ -31,8 +32,10 @@
 
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
             />
-    </LinearLayout>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/signUpMoreInfoText"
@@ -134,7 +137,8 @@
             android:textColorHint="@color/auburn"
             android:textColor="@color/auburn"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="18sp"
+            style="@style/TextAppearance.AppCompat"
 
             android:layout_marginTop="10dp"
             />
@@ -148,7 +152,8 @@
             android:textColorHint="@color/auburn"
             android:textColor="@color/auburn"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="18dp"
+            style="@style/TextAppearance.AppCompat"
 
             android:layout_marginTop="20dp"
             />

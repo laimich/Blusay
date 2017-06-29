@@ -39,6 +39,7 @@
             android:textColor="@color/white"
             android:textSize="15sp"
             android:background="@color/darkGreen"
+            android:visibility="visible"
 
             android:layout_marginRight="3dp"
             />
@@ -50,8 +51,9 @@
             android:hint="@string/passwordLogInPrompt"
             android:textColorHint="@color/darkGreen"
             android:textColor="@color/darkGreen"
-            android:textSize="16sp"
+            android:textSize="17sp"
             android:foreground="@drawable/simple_border"
+            style="@style/TextAppearance.AppCompat"
             android:visibility="gone"
 
             android:layout_marginRight="3dp"
@@ -65,6 +67,7 @@
             android:textColor="@color/white"
             android:textSize="15sp"
             android:background="@color/darkGreen"
+            android:visibility="visible"
 
             android:layout_marginLeft="3dp"
             />
@@ -76,8 +79,9 @@
             android:hint="@string/passwordSignInPrompt"
             android:textColorHint="@color/darkGreen"
             android:textColor="@color/darkGreen"
-            android:textSize="16sp"
+            android:textSize="17sp"
             android:foreground="@drawable/simple_border"
+            style="@style/TextAppearance.AppCompat"
             android:visibility="gone"
 
             android:layout_marginRight="3dp"

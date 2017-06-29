@@ -17,13 +17,14 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@null"
-            android:src="@drawable/settings"
+            android:src="@drawable/back_arrow"
 
             android:layout_marginLeft="20dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="20dp" />
+            android:layout_marginStart="20dp"
+            />
 
         <ImageButton
             android:id="@+id/topBarLogoButton"
@@ -82,113 +83,243 @@
                 android:layout_marginRight="30dp"
                 />
 
-            <LinearLayout
-                android:id="@+id/mainMenuMoodRow1"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/mainMenuReminderLabel"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="5"
+                android:text="@string/mainMenuReminderLabel"
+                android:textColor="@color/darkGreen"
+                android:textSize="15sp"
 
                 android:layout_below="@id/mainMenuTopLabel"
-                android:layout_marginTop="40dp"
-                >
-                <ImageButton
-                    android:id="@+id/mainMenuMoodNAMEHERE1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:background="@null"
-                    android:src="@drawable/mood_hold"
-                    />
-                <ImageButton
-                    android:id="@+id/mainMenuMoodNAMEHERE2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:src="@drawable/mood_hold"
-                    />
-                <ImageButton
-                    android:id="@+id/mainMenuMoodNAMEHERE3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:background="@null"
-                    android:src="@drawable/mood_hold"
-                    />
-            </LinearLayout>
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                />
 
-            <LinearLayout
-                android:id="@+id/mainMenuMoodRow2"
+            <RelativeLayout
+                android:id="@+id/mainMenuReminderContentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+
+                android:layout_below="@id/mainMenuReminderLabel"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/mainMenuReminderContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/mainMenuReminderContext"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    />
+
+                <ImageButton
+                    android:id="@+id/mainMenuReminderDownArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_arrow"
+                    android:background="@null"
+                    android:visibility="visible"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/mainMenuReminderContent"
+                    />
+
+                <ImageButton
+                    android:id="@+id/mainMenuReminderUpArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/up_arrow"
+                    android:background="@null"
+                    android:visibility="gone"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/mainMenuReminderContent"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/simple_line"
+
+                android:layout_below="@id/mainMenuReminderContentLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/mainMenuReminderExpandLayout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone"
+
+                android:layout_below="@id/mainMenuTopLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="30dp"
+                >
+
+                <!-- for reminders unexpanded, do ONE of the following
+                         1 - display top 2, then show "..."
+                         2 - "expand for 5 more reminders" -->
+                <!-- for reminders expanded, (in this layout) how format?
+                         maybe like todoist? -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainMenuMoodLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="5"
+                android:visibility="visible"
 
-                android:layout_below="@id/mainMenuMoodRow1"
-                android:layout_marginTop="40dp"
+                android:layout_below="@id/mainMenuTopLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="30dp"
                 >
                 <ImageButton
-                    android:id="@+id/mainMenuMoodNAMEHERE4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:background="@null"
+                    android:id="@+id/mainMenuMoodButtonNAME1"
                     android:src="@drawable/mood_hold"
-                    />
-                <ImageButton
-                    android:id="@+id/mainMenuMoodNAMEHERE5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:src="@drawable/mood_hold"
-                    />
-                <ImageButton
-                    android:id="@+id/mainMenuMoodNAMEHERE6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:background="@null"
-                    android:src="@drawable/mood_hold"
-                    />
-            </LinearLayout>
+                    style="@style/MoodResponseButton"
 
-            <LinearLayout
-                android:id="@+id/mainMenuMoodRow3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="5"
+                    android:layout_alignParentLeft="true"
+                    />
+                <TextView
+                    android:id="@+id/mainMenuMoodLabelNAME1"
+                    android:text="Happiness"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGreen"
+                    style="@style/MoodResponseText"
 
-                android:layout_below="@id/mainMenuMoodRow2"
-                android:layout_marginTop="40dp"
-                >
-                <ImageButton
-                    android:id="@+id/mainMenuMoodNAMEHERE7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:background="@null"
-                    android:src="@drawable/mood_hold"
+                    android:layout_below="@id/mainMenuMoodButtonNAME1"
+                    android:layout_alignParentLeft="true"
                     />
+
                 <ImageButton
-                    android:id="@+id/mainMenuMoodNAMEHERE8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@null"
+                    android:id="@+id/mainMenuMoodButtonNAME2"
                     android:src="@drawable/mood_hold"
+                    style="@style/MoodResponseButton"
+
+                    android:layout_centerHorizontal="true"
                     />
+                <TextView
+                    android:id="@+id/mainMenuMoodLabelNAME2"
+                    android:text="Sadness"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGreen"
+                    style="@style/MoodResponseText"
+
+                    android:layout_below="@id/mainMenuMoodButtonNAME2"
+                    android:layout_centerHorizontal="true"
+                    />
+
                 <ImageButton
-                    android:id="@+id/mainMenuMoodNAMEHERE9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:background="@null"
+                    android:id="@+id/mainMenuMoodButtonNAME3"
                     android:src="@drawable/mood_hold"
+                    style="@style/MoodResponseButton"
+
+                    android:layout_alignParentRight="true"
                     />
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/mainMenuMoodLabelNAME3"
+                    android:text="Mood3"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGreen"
+                    style="@style/MoodResponseText"
+
+                    android:layout_below="@id/mainMenuMoodButtonNAME2"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/mainMenuMoodButtonNAME4"
+                    android:src="@drawable/mood_hold"
+                    style="@style/MoodResponseButton"
+
+                    android:layout_below="@id/mainMenuMoodLabelNAME1"
+                    android:layout_alignParentLeft="true"
+                    />
+                <TextView
+                    android:id="@+id/mainMenuMoodLabelNAME4"
+                    android:text="Mood4"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGreen"
+                    style="@style/MoodResponseText"
+
+                    android:layout_below="@id/mainMenuMoodButtonNAME4"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/mainMenuMoodButtonNAME5"
+                    android:src="@drawable/mood_hold"
+                    style="@style/MoodResponseButton"
+
+                    android:layout_below="@id/mainMenuMoodLabelNAME1"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/mainMenuMoodLabelNAME5"
+                    android:text="Mood5"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGreen"
+                    style="@style/MoodResponseText"
+
+                    android:layout_below="@id/mainMenuMoodButtonNAME5"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/mainMenuMoodButtonNAME6"
+                    android:src="@drawable/mood_hold"
+                    style="@style/MoodResponseButton"
+
+                    android:layout_below="@id/mainMenuMoodLabelNAME1"
+                    android:layout_alignParentRight="true"
+                    />
+                <TextView
+                    android:id="@+id/mainMenuMoodLabelNAME6"
+                    android:text="Mood6"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGreen"
+                    style="@style/MoodResponseText"
+
+                    android:layout_below="@id/mainMenuMoodButtonNAME6"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/mainMenuMoodButtonNAME7"
+                    android:src="@drawable/mood_hold"
+                    style="@style/MoodResponseButton"
+
+                    android:layout_below="@id/mainMenuMoodLabelNAME4"
+                    android:layout_alignParentLeft="true"
+                    />
+                <TextView
+                    android:id="@+id/mainMenuMoodLabelNAME7"
+                    android:text="Mood7"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGreen"
+                    style="@style/MoodResponseText"
+
+                    android:layout_below="@id/mainMenuMoodButtonNAME7"
+                    android:layout_alignParentLeft="true"
+                    />
+            </RelativeLayout>
+
+            <!--
+                 TODO: put log out buttom at top left
+                 TODO: put reminder section at  top of main menu -->
+
+
         </RelativeLayout>
     </ScrollView>
 
