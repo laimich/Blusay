@@ -61,10 +61,10 @@
             android:layout_height="match_parent"
             >
             <TextView
-                android:id="@+id/mainMenuPrompt"
+                android:id="@+id/moodSelectPrompt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Something else"
+                android:text="What would you like to do?"
                 android:textSize="40sp"
                 android:textColor="@color/darkBlue"
                 android:textStyle="italic"
@@ -73,56 +73,62 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 />
+            <!-- Prompt options:
+                    What would you like to do?
+                    What can help?
+                    What to do?
+                    What kind of assistance?
+                -->
 
             <ImageButton
-                android:id="@+id/signUpMoreInfoButton"
+                android:id="@+id/moodSelectMoreInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:src="@drawable/more_info"
 
-                android:layout_toRightOf="@id/mainMenuPrompt"
+                android:layout_toRightOf="@id/moodSelectPrompt"
                 android:layout_marginTop="10dp"
                 />
 
             <ImageView
+                android:id="@+id/moodSelectTopDivder"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:src="@drawable/simple_line"
 
-                android:layout_below="@+id/mainMenuPrompt"
+                android:layout_below="@+id/moodSelectPrompt"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:id="@+id/imageView" />
+                android:layout_marginRight="30dp" />
 
             <TextView
-                android:id="@+id/mainMenuReminderLabel"
+                android:id="@+id/moodSelectTipsLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mainMenuReminderLabel"
+                android:text="@string/moodSelectedTipsLabel"
                 android:textColor="@color/darkGreen"
                 android:textSize="15sp"
 
-                android:layout_below="@+id/imageView"
+                android:layout_below="@+id/moodSelectTopDivder"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"/>
 
             <RelativeLayout
-                android:id="@+id/mainMenuReminderContentLayout"
+                android:id="@+id/moodSelectTipsContentLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:layout_below="@id/mainMenuReminderLabel"
+                android:layout_below="@id/moodSelectTipsLabel"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="6dp"
                 >
 
                 <TextView
-                    android:id="@+id/mainMenuReminderContent"
+                    android:id="@+id/moodSelectTipsContent"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    android:text="@string/mainMenuReminderContext"
+                    android:text="@string/moodSelectedTipsDefault"
                     android:textColor="@color/grey"
                     android:textSize="13sp"
                     android:textAlignment="center"
@@ -136,7 +142,7 @@
                 android:layout_height="2dp"
                 android:src="@drawable/simple_line"
 
-                android:layout_below="@id/mainMenuReminderContentLayout"
+                android:layout_below="@id/moodSelectTipsContentLayout"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 />
@@ -147,7 +153,7 @@
                 android:layout_height="wrap_content"
                 android:visibility="visible"
 
-                android:layout_below="@id/mainMenuReminderContentLayout"
+                android:layout_below="@id/moodSelectTipsContentLayout"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="30dp"
@@ -162,7 +168,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME1"
-                    android:text="Response1"
+                    android:text="Set Reminder"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -181,7 +187,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME2"
-                    android:text="Response2"
+                    android:text="Draw"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -200,7 +206,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME3"
-                    android:text="Response3"
+                    android:text="Write Journal"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -219,7 +225,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME4"
-                    android:text="Response4"
+                    android:text="Fill a Survey??"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -238,7 +244,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME5"
-                    android:text="Response5"
+                    android:text="Intensity Tracker"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"

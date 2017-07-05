@@ -30,14 +30,20 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="ReminderCheckBox" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
+    <!-- <style name="ReminderCheckBox" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+    -->
 
     <style name="ReminderDisplaySwitch" parent="@style/Widget.AppCompat.CompoundButton.Switch">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="ReminderCheckBox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 </resources>
