@@ -61,15 +61,27 @@
             android:layout_height="match_parent"
             >
             <TextView
-                android:id="@+id/mainMenuTopLabel"
-                android:layout_width="match_parent"
+                android:id="@+id/mainMenuPrompt"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mainMenuPrompt"
+                android:text="Something else"
                 android:textSize="40sp"
                 android:textColor="@color/darkBlue"
                 android:textStyle="italic"
                 android:textAlignment="center"
 
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageButton
+                android:id="@+id/signUpMoreInfoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/more_info"
+
+                android:layout_toRightOf="@id/mainMenuPrompt"
                 android:layout_marginTop="10dp"
                 />
 
@@ -78,7 +90,7 @@
                 android:layout_height="2dp"
                 android:src="@drawable/simple_line"
 
-                android:layout_below="@+id/mainMenuTopLabel"
+                android:layout_below="@+id/mainMenuPrompt"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:id="@+id/imageView" />
@@ -103,6 +115,7 @@
                 android:layout_below="@id/mainMenuReminderLabel"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
+                android:layout_marginBottom="6dp"
                 >
 
                 <TextView
@@ -113,35 +126,9 @@
                     android:textColor="@color/grey"
                     android:textSize="13sp"
                     android:textAlignment="center"
-
                     android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
-
-                <ImageButton
-                    android:id="@+id/mainMenuReminderDownArrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/down_arrow"
-                    android:background="@null"
-                    android:visibility="visible"
-
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@id/mainMenuReminderContent"
-                    />
-
-                <ImageButton
-                    android:id="@+id/mainMenuReminderUpArrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/up_arrow"
-                    android:background="@null"
-                    android:visibility="gone"
-
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@id/mainMenuReminderContent"
-                    />
-
             </RelativeLayout>
 
             <ImageView
@@ -153,65 +140,6 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 />
-
-            <LinearLayout
-                android:id="@+id/mainMenuReminderExpandLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility="gone"
-
-                android:layout_below="@id/mainMenuReminderContentLayout"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginBottom="30dp"
-                >
-                <!-- for reminders unexpanded, do ONE of the following
-                         1 - display top 2, then show "..."
-                         2 - "expand for 5 more reminders" -->
-                <!-- for reminders expanded, (in this layout) how format info?
-                     maybe like todoist?
-                         3-4 levels of priority, each diff colors
-                            auburn, lightAuburn, lightGreen, darkGreen -->
-                <CheckBox
-                    android:id="@+id/mainMenuReminderExpandBox1"
-                    android:text="Show above, complete"
-                    android:textColor="@color/darkGreen"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    style="@style/ReminderCheckBox"
-                    android:visibility="gone"
-                    />
-
-                <Switch
-                    android:text="Show above, complete"
-                    android:textColor="@color/darkGreen"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    style="@style/ReminderDisplaySwitch"
-                    />
-                <Switch
-                    android:text="Show above, title, priority, complete"
-                    android:textColor="@color/lightGreen"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    style="@style/ReminderDisplaySwitch"
-                    />
-                <Switch
-                    android:text="Show above, title, priority, complete"
-                    android:textColor="@color/auburn"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    style="@style/ReminderDisplaySwitch"
-                    />
-                <Switch
-                    android:text="Show above, title, priority, complete"
-                    android:textColor="@color/lightAuburn"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    style="@style/ReminderDisplaySwitch"
-                    />
-            </LinearLayout>
 
             <RelativeLayout
                 android:id="@+id/mainMenuMoodLayout"
@@ -234,7 +162,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME1"
-                    android:text="Happiness"
+                    android:text="Response1"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -253,7 +181,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME2"
-                    android:text="Sadness"
+                    android:text="Response2"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -272,7 +200,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME3"
-                    android:text="Mood3"
+                    android:text="Response3"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -291,7 +219,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME4"
-                    android:text="Mood4"
+                    android:text="Response4"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -310,7 +238,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME5"
-                    android:text="Mood5"
+                    android:text="Response5"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -329,7 +257,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME6"
-                    android:text="Mood6"
+                    android:text="Response6"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -348,7 +276,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME7"
-                    android:text="Mood7"
+                    android:text="Response7"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
@@ -359,25 +287,4 @@
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
-
-    <ImageButton
-        android:id="@+id/mainMenuSettings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        android:src="@drawable/settings"
-
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="15dp"
-        android:layout_marginRight="15dp"
-        />
-
-    <!-- options:
-        - add/edit moods (includes responses)
-        - account info/settings
-        - add/edit/remove reminders (if cant put "completed" in expanded layout)
-
-        -->
-
 </RelativeLayout>
