@@ -64,7 +64,7 @@
                 android:id="@+id/moodSelectPrompt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="What would you like to do?"
+                android:text="How to respond?"
                 android:textSize="40sp"
                 android:textColor="@color/darkBlue"
                 android:textStyle="italic"
@@ -78,6 +78,13 @@
                     What can help?
                     What to do?
                     What kind of assistance?
+                    What is your answer?
+                    What is your response?
+                    How to respond?
+                    How do you respond?
+
+                    What is your mood?
+                    How are you?
                 -->
 
             <ImageButton
@@ -106,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/moodSelectedTipsLabel"
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/auburn"
                 android:textSize="15sp"
 
                 android:layout_below="@+id/moodSelectTopDivder"
@@ -123,7 +130,6 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="6dp"
                 >
-
                 <TextView
                     android:id="@+id/moodSelectTipsContent"
                     android:layout_width="match_parent"
@@ -160,7 +166,7 @@
                 >
                 <ImageButton
                     android:id="@+id/mainMenuMoodButtonNAME1"
-                    android:src="@drawable/mood_hold"
+                    android:src="@drawable/response_hold"
                     style="@style/MoodResponseButton"
 
                     android:layout_marginTop="5dp"
@@ -170,7 +176,7 @@
                     android:id="@+id/mainMenuMoodLabelNAME1"
                     android:text="Set Reminder"
                     android:textAlignment="center"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/darkBlue"
                     style="@style/MoodResponseText"
 
                     android:layout_below="@id/mainMenuMoodButtonNAME1"
@@ -179,7 +185,7 @@
 
                 <ImageButton
                     android:id="@+id/mainMenuMoodButtonNAME2"
-                    android:src="@drawable/mood_hold"
+                    android:src="@drawable/response_hold"
                     style="@style/MoodResponseButton"
 
                     android:layout_marginTop="5dp"
@@ -189,7 +195,7 @@
                     android:id="@+id/mainMenuMoodLabelNAME2"
                     android:text="Draw"
                     android:textAlignment="center"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/darkBlue"
                     style="@style/MoodResponseText"
 
                     android:layout_below="@id/mainMenuMoodButtonNAME2"
@@ -198,7 +204,7 @@
 
                 <ImageButton
                     android:id="@+id/mainMenuMoodButtonNAME3"
-                    android:src="@drawable/mood_hold"
+                    android:src="@drawable/response_hold"
                     style="@style/MoodResponseButton"
 
                     android:layout_marginTop="5dp"
@@ -208,7 +214,7 @@
                     android:id="@+id/mainMenuMoodLabelNAME3"
                     android:text="Write Journal"
                     android:textAlignment="center"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/darkBlue"
                     style="@style/MoodResponseText"
 
                     android:layout_below="@id/mainMenuMoodButtonNAME2"
@@ -217,7 +223,7 @@
 
                 <ImageButton
                     android:id="@+id/mainMenuMoodButtonNAME4"
-                    android:src="@drawable/mood_hold"
+                    android:src="@drawable/response_hold"
                     style="@style/MoodResponseButton"
 
                     android:layout_below="@id/mainMenuMoodLabelNAME1"
@@ -227,7 +233,7 @@
                     android:id="@+id/mainMenuMoodLabelNAME4"
                     android:text="Fill a Survey??"
                     android:textAlignment="center"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/darkBlue"
                     style="@style/MoodResponseText"
 
                     android:layout_below="@id/mainMenuMoodButtonNAME4"
@@ -236,7 +242,7 @@
 
                 <ImageButton
                     android:id="@+id/mainMenuMoodButtonNAME5"
-                    android:src="@drawable/mood_hold"
+                    android:src="@drawable/response_hold"
                     style="@style/MoodResponseButton"
 
                     android:layout_below="@id/mainMenuMoodLabelNAME1"
@@ -246,7 +252,7 @@
                     android:id="@+id/mainMenuMoodLabelNAME5"
                     android:text="Intensity Tracker"
                     android:textAlignment="center"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/darkBlue"
                     style="@style/MoodResponseText"
 
                     android:layout_below="@id/mainMenuMoodButtonNAME5"
@@ -255,7 +261,7 @@
 
                 <ImageButton
                     android:id="@+id/mainMenuMoodButtonNAME6"
-                    android:src="@drawable/mood_hold"
+                    android:src="@drawable/response_hold"
                     style="@style/MoodResponseButton"
 
                     android:layout_below="@id/mainMenuMoodLabelNAME1"
@@ -265,7 +271,7 @@
                     android:id="@+id/mainMenuMoodLabelNAME6"
                     android:text="Response6"
                     android:textAlignment="center"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/darkBlue"
                     style="@style/MoodResponseText"
 
                     android:layout_below="@id/mainMenuMoodButtonNAME6"
@@ -274,7 +280,7 @@
 
                 <ImageButton
                     android:id="@+id/mainMenuMoodButtonNAME7"
-                    android:src="@drawable/mood_hold"
+                    android:src="@drawable/response_hold"
                     style="@style/MoodResponseButton"
 
                     android:layout_below="@id/mainMenuMoodLabelNAME4"
@@ -284,7 +290,7 @@
                     android:id="@+id/mainMenuMoodLabelNAME7"
                     android:text="Response7"
                     android:textAlignment="center"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/darkBlue"
                     style="@style/MoodResponseText"
 
                     android:layout_below="@id/mainMenuMoodButtonNAME7"
