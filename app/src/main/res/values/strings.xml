@@ -38,7 +38,7 @@
     <!-- mood selected screen -->
     <string name="moodSelectedPrompt"></string>
     <string name="moodSelectedTipsLabel">Tips</string>
-    <string name="moodSelectedTipsDefault">Default here\nend</string>
+    <string name="moodSelectedTipsDefault">What would you like to do?</string>
 </resources>
 
 

@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:weightSum="2"
 
         android:layout_marginLeft="6dp"
         android:layout_marginRight="6dp"
@@ -33,61 +34,63 @@
         >
         <Button
             android:id="@+id/initialMemberLogIn"
-            android:layout_width="185dp"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:text="@string/signInLabel"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:background="@color/darkGreen"
+            android:layout_weight="1"
             android:visibility="visible"
 
             android:layout_marginRight="3dp"
             />
-        <EditText
-            android:id="@+id/initialPasswordLogIn"
-            android:layout_width="185dp"
-            android:layout_height="50dp"
-            android:inputType="textPassword"
-            android:hint="@string/passwordLogInPrompt"
-            android:textColorHint="@color/darkGreen"
-            android:textColor="@color/darkGreen"
-            android:textSize="17sp"
-            android:foreground="@drawable/simple_border"
-            style="@style/TextAppearance.AppCompat"
-            android:visibility="gone"
-
-            android:layout_marginRight="3dp"
-            />
-
         <Button
             android:id="@+id/initialMemberSignUp"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:text="@string/signUpLabel"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:background="@color/darkGreen"
+            android:layout_weight="1"
             android:visibility="visible"
 
             android:layout_marginLeft="3dp"
             />
+
         <EditText
-            android:id="@+id/initialPasswordSignUp"
-            android:layout_width="match_parent"
+            android:id="@+id/initialPasswordLogIn"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:inputType="textPassword"
-            android:hint="@string/passwordSignInPrompt"
-            android:textColorHint="@color/darkGreen"
-            android:textColor="@color/darkGreen"
+            android:hint="@string/passwordLogInPrompt"
+            android:textColorHint="@color/auburn"
+            android:textColor="@color/auburn"
             android:textSize="17sp"
             android:foreground="@drawable/simple_border"
+            android:layout_weight="1"
             style="@style/TextAppearance.AppCompat"
             android:visibility="gone"
 
             android:layout_marginRight="3dp"
             />
+        <EditText
+            android:id="@+id/initialPasswordSignUp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="@string/passwordSignInPrompt"
+            android:textColorHint="@color/auburn"
+            android:textColor="@color/auburn"
+            android:textSize="17sp"
+            android:foreground="@drawable/simple_border"
+            android:layout_weight="1"
+            style="@style/TextAppearance.AppCompat"
+            android:visibility="gone"
 
-
+            android:layout_marginLeft="3dp"
+            />
     </LinearLayout>
 
     <TextView

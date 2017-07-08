@@ -32,7 +32,7 @@
             android:src="@drawable/more_info"
 
             android:layout_toRightOf="@id/signUpPrompt"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
             />
     </RelativeLayout>
 
@@ -107,7 +107,7 @@
             android:layout_marginRight="40dp"
             >
             <RadioButton
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/signUpOptNamePrompt"
@@ -116,7 +116,7 @@
                 android:buttonTint="@color/darkGreen"
                 />
             <RadioButton
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/signUpOptUsernamePrompt"

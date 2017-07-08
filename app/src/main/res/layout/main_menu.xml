@@ -81,7 +81,8 @@
 
                 android:layout_below="@+id/mainMenuTopLabel"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp" />
+                android:layout_marginRight="30dp"
+                />
 
             <TextView
                 android:id="@+id/mainMenuReminderLabel"
@@ -143,7 +144,6 @@
                     android:layout_centerHorizontal="true"
                     android:layout_below="@id/mainMenuReminderContent"
                     />
-
             </RelativeLayout>
 
             <ImageView
@@ -174,60 +174,79 @@
                 <!-- for reminders expanded, (in this layout) how format info?
                      maybe like todoist?
                          3-4 levels of priority, each diff colors
-                            auburn, lightAuburn, lightGreen, darkGreen -->
+                            darkRed, lightAuburn, blueTeal, darkGreen -->
 
                 <!-- change max show here or in the settings?
                       -->
+                <LinearLayout
+                    android:id="@+id/reminderExpandSwitchLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_alignParentRight="true"
+                    >
+                    <Switch
+                        android:id="@+id/reminderExpandSwitch1"
+                        style="@style/ReminderDisplaySwitch"
+                        />
+                    <Switch
+                        android:id="@+id/reminderExpandSwitch2"
+                        style="@style/ReminderDisplaySwitch"
+                        />
+                    <Switch
+                        android:id="@+id/reminderExpandSwitch3"
+                        style="@style/ReminderDisplaySwitch"
+                        />
+                    <Switch
+                        android:id="@+id/reminderExpandSwitch4"
+                        style="@style/ReminderDisplaySwitch"
+                        />
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/reminderExpandBoxLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility="gone"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/reminderExpandSwitchLayout"
                     >
                     <CheckBox
                         android:id="@+id/reminderExpandBox1"
+                        android:text="Show above, complete"
+                        android:textColor="@color/darkRed"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:buttonTint="@color/grey"
                         style="@style/ReminderCheckBox"
                         />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/reminderExpandSwitchLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-                    <Switch
-                        android:id="@+id/reminderExpandSwitch1"
-                        android:text="Show above, complete"
-                        android:textColor="@color/darkGreen"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        style="@style/ReminderDisplaySwitch"
-                        />
-                    <Switch
-                        android:id="@+id/reminderExpandSwitch2"
-                        android:text="Show above, title, priority, complete"
-                        android:textColor="@color/lightGreen"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        style="@style/ReminderDisplaySwitch"
-                        />
-                    <Switch
-                        android:id="@+id/reminderExpandSwitch3"
-                        android:text="Show above, title, priority, complete"
-                        android:textColor="@color/auburn"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        style="@style/ReminderDisplaySwitch"
-                        />
-                    <Switch
-                        android:id="@+id/reminderExpandSwitch4"
+                    <CheckBox
+                        android:id="@+id/reminderExpandBox2"
                         android:text="Show above, title, priority, complete"
                         android:textColor="@color/lightAuburn"
                         android:textAlignment="center"
                         android:textSize="16sp"
-                        style="@style/ReminderDisplaySwitch"
+                        android:buttonTint="@color/grey"
+                        style="@style/ReminderCheckBox"
+                        />
+                    <CheckBox
+                        android:id="@+id/reminderExpandBox3"
+                        android:text="Show above, title, priority, complete"
+                        android:textColor="@color/blueTeal"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:buttonTint="@color/grey"
+                        style="@style/ReminderCheckBox"
+                        />
+                    <CheckBox
+                        android:id="@+id/reminderExpandBox4"
+                        android:text="Show above, title, priority, complete"
+                        android:textColor="@color/darkGreen"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:buttonTint="@color/grey"
+                        style="@style/ReminderCheckBox"
                         />
                 </LinearLayout>
             </RelativeLayout>
@@ -238,10 +257,10 @@
                 android:layout_height="wrap_content"
                 android:visibility="visible"
 
-                android:layout_below="@id/mainMenuReminderContentLayout"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/mainMenuReminderContentLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 >
                 <ImageButton
                     android:id="@+id/mainMenuMoodButtonNAME1"
@@ -310,7 +329,7 @@
                     />
                 <TextView
                     android:id="@+id/mainMenuMoodLabelNAME4"
-                    android:text="Mood4"
+                    android:text="Remorseful"
                     android:textAlignment="center"
                     android:textColor="@color/darkGreen"
                     style="@style/MoodResponseText"
