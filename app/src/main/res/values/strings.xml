@@ -36,9 +36,11 @@
     </string-array>
 
     <!-- mood selected screen -->
-    <string name="moodSelectedPrompt"></string>
-    <string name="moodSelectedTipsLabel">Tips</string>
-    <string name="moodSelectedTipsDefault">What would you like to do?</string>
+    <string name="moodSelectedPrompt">Current Mood</string>
+    <string name="moodSelectedNoticeLabel">Notice</string>
+    <string name="moodSelectedNoticeDefault">What would you like to do?</string>
+    <string name="moodSelectedDescLabel">Mood Description</string>
+    <string name="moodSelectedLevelsLabel">Mood Levels</string>
 </resources>
 
 

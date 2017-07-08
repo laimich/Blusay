@@ -203,6 +203,7 @@
                         style="@style/ReminderDisplaySwitch"
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/reminderExpandBoxLayout"
                     android:layout_width="wrap_content"
@@ -211,13 +212,13 @@
 
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@id/reminderExpandSwitchLayout"
+                    android:layout_marginRight="5dp"
                     >
                     <CheckBox
                         android:id="@+id/reminderExpandBox1"
                         android:text="Show above, complete"
                         android:textColor="@color/darkRed"
                         android:textAlignment="center"
-                        android:textSize="16sp"
                         android:buttonTint="@color/grey"
                         style="@style/ReminderCheckBox"
                         />
@@ -226,7 +227,6 @@
                         android:text="Show above, title, priority, complete"
                         android:textColor="@color/lightAuburn"
                         android:textAlignment="center"
-                        android:textSize="16sp"
                         android:buttonTint="@color/grey"
                         style="@style/ReminderCheckBox"
                         />
@@ -235,7 +235,6 @@
                         android:text="Show above, title, priority, complete"
                         android:textColor="@color/blueTeal"
                         android:textAlignment="center"
-                        android:textSize="16sp"
                         android:buttonTint="@color/grey"
                         style="@style/ReminderCheckBox"
                         />
@@ -244,7 +243,6 @@
                         android:text="Show above, title, priority, complete"
                         android:textColor="@color/darkGreen"
                         android:textAlignment="center"
-                        android:textSize="16sp"
                         android:buttonTint="@color/grey"
                         style="@style/ReminderCheckBox"
                         />
@@ -412,7 +410,8 @@
         />
 
     <!-- options:
-        - add/edit mood options (includes response options)
+        - add/edit main menu mood options
+            includes add/edit mood's response options and edit its "notice" section
         - view/delete previously entered saved responses
         - account info/settings
      ?? - change number of max lines displayed for top reminder bar (1 line min)

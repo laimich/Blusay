@@ -9,6 +9,7 @@
     <!-- for background -->
     <color name="teal">#92B7A6</color>
     <color name="lightBlue">#dfb9d6d5</color>
+    <color name="lighterAuburn">#d6988b</color>
 
     <!-- main colors/for general, text, icons -->
     <color name="darkBlue">#e7081146</color>
@@ -19,7 +20,6 @@
     <color name="darkRed">#8e2a35</color>
     <color name="lightAuburn">#e4b76f5f</color>
     <color name="blueTeal">#fa1d8175</color>
-
     <color name="lightGreen">#457962</color>
 
     <!-- primary colors -->

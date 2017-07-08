@@ -47,7 +47,6 @@
             android:layout_marginRight="20dp"
             />
     </RelativeLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -63,7 +62,7 @@
                 android:id="@+id/moodSelectPrompt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Current Mood"
+                android:text="@string/moodSelectedPrompt"
                 android:textSize="40sp"
                 android:textColor="@color/darkBlue"
                 android:textStyle="italic"
@@ -84,12 +83,12 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="2dp"
                 />
-            <!-- on click,
+            <!-- if clicked,
                  show layout until re-click i or click outside the shown layout
                  -->
 
             <ImageView
-                android:id="@+id/moodSelectTopDivder"
+                android:id="@+id/moodSelectTopDivider"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:src="@drawable/simple_line"
@@ -100,33 +99,33 @@
                 />
 
             <TextView
-                android:id="@+id/moodSelectTipsLabel"
+                android:id="@+id/moodSelectNoticeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/moodSelectedTipsLabel"
+                android:text="@string/moodSelectedNoticeLabel"
                 android:textColor="@color/darkRed"
                 android:textSize="15sp"
 
-                android:layout_below="@+id/moodSelectTopDivder"
+                android:layout_below="@+id/moodSelectTopDivider"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 />
 
             <RelativeLayout
-                android:id="@+id/moodSelectTipsContentLayout"
+                android:id="@+id/moodSelectNoticeContentLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:layout_below="@id/moodSelectTipsLabel"
+                android:layout_below="@id/moodSelectNoticeLabel"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="6dp"
                 >
                 <TextView
-                    android:id="@+id/moodSelectTipsContent"
+                    android:id="@+id/moodSelectNoticeContent"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    android:text="@string/moodSelectedTipsDefault"
+                    android:text="@string/moodSelectedNoticeDefault"
                     android:textColor="@color/grey"
                     android:textSize="13sp"
                     android:textAlignment="center"
@@ -156,7 +155,7 @@
                 android:layout_height="2dp"
                 android:src="@drawable/simple_line"
 
-                android:layout_below="@id/moodSelectTipsContentLayout"
+                android:layout_below="@id/moodSelectNoticeContentLayout"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 />
@@ -167,7 +166,7 @@
                 android:layout_height="wrap_content"
                 android:visibility="visible"
 
-                android:layout_below="@id/moodSelectTipsContentLayout"
+                android:layout_below="@id/moodSelectNoticeContentLayout"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -307,4 +306,73 @@
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
+    <RelativeLayout
+        android:id="@+id/moodSelectInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lighterAuburn"
+        android:visibility="gone"
+
+        android:layout_centerInParent="true"
+        android:layout_below="@id/topBarLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="65dp"
+        >
+        <TextView
+            android:id="@+id/moodSelectInfoDescLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moodSelectedDescLabel"
+            android:textSize="15sp"
+            android:textColor="@color/darkGreen"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/moodSelectInfoDescContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is the description\n.\n.\n.\nend"
+            android:textSize="13sp"
+            android:textAlignment="center"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/moodSelectInfoDescLabel"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            />
+        <ImageView
+            android:id="@+id/moodSelectInfoDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@drawable/simple_line"
+
+            android:layout_below="@+id/moodSelectInfoDescContent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+        <TextView
+            android:id="@+id/moodSelectInfoLevelsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moodSelectedLevelsLabel"
+            android:textSize="15sp"
+            android:textColor="@color/darkGreen"
+
+            android:layout_below="@id/moodSelectInfoDivider"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+        <SeekBar
+            android:id="@+id/moodSelectLevelsSlide1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/moodSelectInfoLevelsLabel"
+            />
+    </RelativeLayout>
 </RelativeLayout>
