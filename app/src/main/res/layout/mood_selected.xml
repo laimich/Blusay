@@ -310,15 +310,16 @@
         android:id="@+id/moodSelectInfoLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/lighterAuburn"
+        android:backgroundTint="@color/lighterAuburn"
+        android:background="@android:drawable/dialog_holo_light_frame"
         android:visibility="gone"
 
         android:layout_centerInParent="true"
         android:layout_below="@id/topBarLayout"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="65dp"
-        android:layout_marginBottom="65dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
         >
         <TextView
             android:id="@+id/moodSelectInfoDescLabel"
