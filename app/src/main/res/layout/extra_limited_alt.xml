@@ -57,20 +57,14 @@
                     android:id="@+id/settingsDescLabelInfo"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:text="Update or change the following"
+                    android:text="More options at the main menu"
                     android:textSize="12sp"
                     android:textColor="@color/grey"
 
                     android:layout_below="@id/settingsDescLabelTitle"
                     />
             </RelativeLayout>
-
         </RelativeLayout>
-
-
-
-
-
 
         <LinearLayout
             android:id="@+id/settingsLogoLayout"
@@ -104,95 +98,6 @@
                 style="@style/SettingsLogoArrow"
                 android:tint="@color/white"
                 />
-            <ImageButton
-                android:id="@+id/settingsLogo4"
-                android:src="@drawable/settings_icon_hold"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/white"
-                />
-            <ImageButton
-                android:id="@+id/settingsLogo5"
-                android:src="@drawable/settings_icon_hold"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/white"
-                />
-            <ImageButton
-                android:id="@+id/settingsLogo6"
-                android:src="@drawable/settings_icon_hold"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/white"
-                />
-            <ImageButton
-                android:id="@+id/settingsLogo7"
-                android:src="@drawable/settings_icon_hold"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/white"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/settingsArrowLayout"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone"
-
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/settingsDescLayout"
-            android:layout_marginBottom="20dp"
-            >
-            <ImageButton
-                android:id="@+id/settingsArrow1"
-                android:src="@drawable/forward_arrow"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/lightBlue"
-                />
-            <ImageButton
-                android:id="@+id/settingsArrow2"
-                android:src="@drawable/forward_arrow"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/lightBlue"
-                />
-            <ImageButton
-                android:id="@+id/settingsArrow3"
-                android:src="@drawable/forward_arrow"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/lightBlue"
-                />
-            <ImageButton
-                android:id="@+id/settingsArrow4"
-                android:src="@drawable/forward_arrow"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/lightBlue"
-                />
-            <ImageButton
-                android:id="@+id/settingsArrow5"
-                android:src="@drawable/forward_arrow"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/lightBlue"
-                />
-            <ImageButton
-                android:id="@+id/settingsArrow6"
-                android:src="@drawable/forward_arrow"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/lightBlue"
-                />
-            <ImageButton
-                android:id="@+id/settingsArrow7"
-                android:src="@drawable/forward_arrow"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLogoArrow"
-                android:tint="@color/lightBlue"
-                />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/settingsLabelLayout"
@@ -207,44 +112,8 @@
             android:layout_marginBottom="20dp"
             >
             <Button
-                android:id="@+id/settingsLabel1"
-                android:text="Mood Options"
-                android:textColor="@color/lightBlue"
-                android:textAlignment="textStart"
-                android:layout_gravity="start"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLabel"
-                />
-            <Button
-                android:id="@+id/settingsLabel2"
-                android:text="Response Options"
-                android:textColor="@color/lightBlue"
-                android:textAlignment="textStart"
-                android:layout_gravity="start"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLabel"
-                />
-            <Button
                 android:id="@+id/settingsLabel3"
                 android:text="Saved Responses"
-                android:textColor="@color/lightBlue"
-                android:textAlignment="textStart"
-                android:layout_gravity="start"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLabel"
-                />
-            <Button
-                android:id="@+id/settingsLabel4"
-                android:text="Reminder Options"
-                android:textColor="@color/lightBlue"
-                android:textAlignment="textStart"
-                android:layout_gravity="start"
-                android:background="@color/darkBlue"
-                style="@style/SettingsLabel"
-                />
-            <Button
-                android:id="@+id/settingsLabel5"
-                android:text="Account Options"
                 android:textColor="@color/lightBlue"
                 android:textAlignment="textStart"
                 android:layout_gravity="start"

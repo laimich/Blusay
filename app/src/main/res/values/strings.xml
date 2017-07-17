@@ -44,6 +44,9 @@
     <string name="moodSelectedNoticeDefault">What would you like to do?</string>
     <string name="moodSelectedDescLabel">Mood Description</string>
     <string name="moodSelectedLevelsLabel">Mood Levels</string>
+
+    <!-- all response top prompts -->
+    <string name="responseMusicPrompt">Listen to Audio</string>
 </resources>
 
 
