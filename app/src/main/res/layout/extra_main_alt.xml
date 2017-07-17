@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingsMainLayout"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/darkGrey"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:visibility="visible"
+
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentBottom="true"
+    >
+    <RelativeLayout
+        android:id="@+id/settingsMainScrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <RelativeLayout
+            android:id="@+id/settingsDescLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_alignParentTop="true"
+            >
+            <ImageButton
+                android:id="@+id/settingsDescBackButton"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:background="@null"
+                android:tint="@color/lightBlue"
+
+                android:layout_centerVertical="true"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@id/settingsDescBackButton"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                >
+                <TextView
+                    android:id="@+id/settingsDescLabelTitle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textSize="18sp"
+                    android:textColor="@color/lightBlue"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:id="@+id/settingsDescLabelInfo"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Update or change the following"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+
+                    android:layout_below="@id/settingsDescLabelTitle"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/settingsLogoLayout"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/settingsDescLayout"
+            android:layout_marginBottom="20dp"
+            >
+            <ImageButton
+                android:id="@+id/settingsLogo1"
+                android:src="@drawable/settings_icon_hold"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/white"
+                />
+            <ImageButton
+                android:id="@+id/settingsLogo2"
+                android:src="@drawable/settings_icon_hold"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/white"
+                />
+            <ImageButton
+                android:id="@+id/settingsLogo3"
+                android:src="@drawable/settings_icon_hold"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/white"
+                />
+            <ImageButton
+                android:id="@+id/settingsLogo4"
+                android:src="@drawable/settings_icon_hold"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/white"
+                />
+            <ImageButton
+                android:id="@+id/settingsLogo5"
+                android:src="@drawable/settings_icon_hold"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/white"
+                />
+            <ImageButton
+                android:id="@+id/settingsLogo6"
+                android:src="@drawable/settings_icon_hold"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/settingsArrowLayout"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/settingsDescLayout"
+            android:layout_marginBottom="20dp"
+            >
+            <ImageButton
+                android:id="@+id/settingsArrow1"
+                android:src="@drawable/forward_arrow"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/lightBlue"
+                />
+            <ImageButton
+                android:id="@+id/settingsArrow2"
+                android:src="@drawable/forward_arrow"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/lightBlue"
+                />
+            <ImageButton
+                android:id="@+id/settingsArrow3"
+                android:src="@drawable/forward_arrow"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/lightBlue"
+                />
+            <ImageButton
+                android:id="@+id/settingsArrow4"
+                android:src="@drawable/forward_arrow"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/lightBlue"
+                />
+            <ImageButton
+                android:id="@+id/settingsArrow5"
+                android:src="@drawable/forward_arrow"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/lightBlue"
+                />
+            <ImageButton
+                android:id="@+id/settingsArrow6"
+                android:src="@drawable/forward_arrow"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLogoArrow"
+                android:tint="@color/lightBlue"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/settingsLabelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+
+            android:layout_toLeftOf="@id/settingsArrowLayout"
+            android:layout_toRightOf="@id/settingsLogoLayout"
+            android:layout_below="@id/settingsDescLayout"
+            android:layout_marginBottom="20dp"
+            >
+            <Button
+                android:id="@+id/settingsLabel1"
+                android:text="Mood Options"
+                android:textColor="@color/lightBlue"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLabel"
+                />
+            <Button
+                android:id="@+id/settingsLabel2"
+                android:text="Response Options"
+                android:textColor="@color/lightBlue"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLabel"
+                />
+            <Button
+                android:id="@+id/settingsLabel3"
+                android:text="Saved Responses"
+                android:textColor="@color/lightBlue"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLabel"
+                />
+            <Button
+                android:id="@+id/settingsLabel4"
+                android:text="Reminder Options"
+                android:textColor="@color/lightBlue"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLabel"
+                />
+            <Button
+                android:id="@+id/settingsLabel5"
+                android:text="Account Options"
+                android:textColor="@color/lightBlue"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLabel"
+                />
+            <Button
+                android:id="@+id/settingsLabel6"
+                android:text="Log out"
+                android:textColor="@color/lightBlue"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:background="@color/darkBlue"
+                style="@style/SettingsLabel"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -2,13 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightBlue"
+    android:background="@color/darkBlue"
     >
     <RelativeLayout
         android:id="@+id/topBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/teal"
+        android:background="@color/darkGrey"
 
         android:layout_alignParentTop="true"
         >
@@ -17,7 +17,8 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@null"
-            android:src="@drawable/back_arrow"
+            android:src="@drawable/up_arrow"
+            android:tint="@color/lightBlue"
 
             android:layout_marginLeft="20dp"
             android:layout_alignParentTop="true"
@@ -32,6 +33,7 @@
             android:layout_height="50dp"
             android:background="@null"
             android:src="@drawable/more_info"
+            android:tint="@color/lightBlue"
 
             android:layout_centerHorizontal="true"
             />
@@ -42,6 +44,7 @@
             android:layout_height="50dp"
             android:background="@null"
             android:src="@drawable/quick_memo"
+            android:tint="@color/lightBlue"
 
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
@@ -64,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/moodSelectedPrompt"
                 android:textSize="40sp"
-                android:textColor="@color/darkBlue"
+                android:textColor="@color/white"
                 android:textStyle="italic"
                 android:textAlignment="center"
 
@@ -78,6 +81,7 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:src="@drawable/more_info"
+                android:tint="@color/lightBlue"
 
                 android:layout_toRightOf="@id/moodSelectPrompt"
                 android:layout_marginTop="10dp"
@@ -92,6 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:src="@drawable/simple_line"
+                android:tint="@color/teal"
 
                 android:layout_below="@+id/moodSelectPrompt"
                 android:layout_marginLeft="30dp"
@@ -103,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/moodSelectedNoticeLabel"
-                android:textColor="@color/darkRed"
+                android:textColor="@color/lighterAuburn"
                 android:textSize="15sp"
 
                 android:layout_below="@+id/moodSelectTopDivider"
@@ -154,6 +159,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:src="@drawable/simple_line"
+                android:tint="@color/teal"
 
                 android:layout_below="@id/moodSelectNoticeContentLayout"
                 android:layout_marginLeft="30dp"
@@ -174,76 +180,86 @@
                 <Button
                     android:id="@+id/moodSelectResponseNAME1"
                     android:drawableTop="@drawable/response_hold"
+                    android:drawableTint="@color/teal"
                     android:text="Set Reminder"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/ResponseStyleAlt"
 
                     android:layout_marginTop="5dp"
                     />
                 <Button
                     android:id="@+id/moodSelectResponseNAME2"
                     android:drawableTop="@drawable/response_hold"
+                    android:drawableTint="@color/teal"
                     android:text="Draw"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/ResponseStyleAlt"
 
                     android:layout_marginTop="5dp"
                     />
                 <Button
                     android:id="@+id/moodSelectResponseNAME3"
                     android:drawableTop="@drawable/response_hold"
+                    android:drawableTint="@color/teal"
                     android:text="Write Journal"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/ResponseStyleAlt"
 
                     android:layout_marginTop="5dp"
                     />
                 <Button
                     android:id="@+id/moodSelectResponseNAME4"
                     android:drawableTop="@drawable/response_hold"
+                    android:drawableTint="@color/teal"
                     android:text="Fill a Survey?"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/ResponseStyleAlt"
                     />
                 <Button
                     android:id="@+id/moodSelectResponseNAME5"
                     android:drawableTop="@drawable/response_hold"
+                    android:drawableTint="@color/teal"
                     android:text="Intensity Tracker"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/ResponseStyleAlt"
                     />
                 <Button
                     android:id="@+id/moodSelectResponseNAME6"
                     android:drawableTop="@drawable/response_hold"
+                    android:drawableTint="@color/teal"
                     android:text="Set Reminder"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/ResponseStyleAlt"
                     />
                 <Button
                     android:id="@+id/moodSelectResponseNAME7"
                     android:drawableTop="@drawable/response_hold"
+                    android:drawableTint="@color/teal"
                     android:text="Set Reminder"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/ResponseStyleAlt"
                     />
                 <Button
                     android:id="@+id/moodSelectResponseNAME8"
                     android:drawableTop="@drawable/response_hold"
+                    android:drawableTint="@color/teal"
                     android:text="Set Reminder"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/ResponseStyleAlt"
                     />
             </GridLayout>
         </RelativeLayout>
     </ScrollView>
+
+
     <RelativeLayout
         android:id="@+id/moodSelectInfoLayout"
         android:layout_width="match_parent"
@@ -289,6 +305,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:src="@drawable/simple_line"
+            android:tint="@color/teal"
 
             android:layout_below="@+id/moodSelectInfoDescContent"
             android:layout_marginLeft="30dp"

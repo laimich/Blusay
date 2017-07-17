@@ -16,20 +16,47 @@
 
     </style> -->
 
-    <style name="MoodResponseButton" parent="@style/Widget.AppCompat.Button">
+    <style name="MoodStyle" parent="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@null</item>
-        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#fa03413a</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">35dp</item>
+    </style>
+
+    <style name="ResponseStyle" parent="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#8e2a35</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">35dp</item>
+    </style>
+
+    <style name="MoodStyleAlt" parent="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#d6988b</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">35dp</item>
+    </style>
+
+    <style name="ResponseStyleAlt" parent="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">35dp</item>
     </style>
 
     <!-- "@style/TextAppearance.AppCompat.Button" for button text font -->
-
-    <style name="MoodResponseText" parent="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">15sp</item>
-    </style>
 
     <!-- <style name="ReminderCheckBox" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:layout_width">match_parent</item>

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ScrollView;
 
 import static java.sql.DriverManager.println;
 
@@ -20,6 +21,9 @@ public class Initial extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.initial);
+
+        //ScrollView test = (ScrollView) findViewById(R.id.settingsMainLayout);
+        //test.setVisibility(View.GONE);
 
         //for continue as local user
         Button enterLocalUser = (Button) findViewById(R.id.initialLocalUser);

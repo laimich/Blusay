@@ -2,9 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightBlue"
-    >
-    <include layout="@layout/top_bar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/darkBlue">
+
+    <include layout="@layout/top_bar_alt"
         />
 
     <ScrollView
@@ -14,7 +15,8 @@
 
         android:layout_below="@+id/topBarLayout"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -25,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/mainMenuPrompt"
                 android:textSize="40sp"
-                android:textColor="@color/darkBlue"
+                android:textColor="@color/white"
                 android:textStyle="italic"
                 android:textAlignment="center"
 
@@ -37,6 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:src="@drawable/simple_line"
+                android:tint="@color/teal"
 
                 android:layout_below="@+id/mainMenuTopLabel"
                 android:layout_marginLeft="30dp"
@@ -48,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mainMenuReminderLabel"
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/lightBlue"
                 android:textSize="15sp"
 
                 android:layout_below="@+id/mainMenuTopDivider"
@@ -86,6 +89,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/down_arrow"
                     android:background="@null"
+                    android:tint="@color/lightBlue"
                     android:visibility="visible"
 
                     android:layout_centerHorizontal="true"
@@ -98,6 +102,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/up_arrow"
                     android:background="@null"
+                    android:tint="@color/lightBlue"
                     android:visibility="gone"
 
                     android:layout_centerHorizontal="true"
@@ -109,6 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:src="@drawable/simple_line"
+                android:tint="@color/teal"
 
                 android:layout_below="@id/mainMenuReminderContentLayout"
                 android:layout_marginLeft="30dp"
@@ -176,7 +182,7 @@
                     <CheckBox
                         android:id="@+id/reminderExpandBox1"
                         android:text="Show above, complete"
-                        android:textColor="@color/darkRed"
+                        android:textColor="@color/white"
                         android:textAlignment="center"
                         android:buttonTint="@color/grey"
                         style="@style/ReminderCheckBox"
@@ -184,7 +190,7 @@
                     <CheckBox
                         android:id="@+id/reminderExpandBox2"
                         android:text="Show above, title, priority, complete"
-                        android:textColor="@color/lightAuburn"
+                        android:textColor="@color/lighterAuburn"
                         android:textAlignment="center"
                         android:buttonTint="@color/grey"
                         style="@style/ReminderCheckBox"
@@ -192,7 +198,7 @@
                     <CheckBox
                         android:id="@+id/reminderExpandBox3"
                         android:text="Show above, title, priority, complete"
-                        android:textColor="@color/blueTeal"
+                        android:textColor="@color/lightBlue"
                         android:textAlignment="center"
                         android:buttonTint="@color/grey"
                         style="@style/ReminderCheckBox"
@@ -200,7 +206,7 @@
                     <CheckBox
                         android:id="@+id/reminderExpandBox4"
                         android:text="Show above, title, priority, complete"
-                        android:textColor="@color/darkGreen"
+                        android:textColor="@color/teal"
                         android:textAlignment="center"
                         android:buttonTint="@color/grey"
                         style="@style/ReminderCheckBox"
@@ -223,64 +229,53 @@
                 <Button
                     android:id="@+id/mainMenuMoodNAME1"
                     android:drawableTop="@drawable/mood_hold"
+                    android:drawableTint="@color/white"
                     android:text="Happiness"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/MoodStyle"
+                    style="@style/MoodStyleAlt"
 
                     android:layout_marginTop="5dp"
                     />
                 <Button
                     android:id="@+id/mainMenuMoodNAME2"
                     android:drawableTop="@drawable/mood_hold"
+                    android:drawableTint="@color/white"
                     android:text="Sadness"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/MoodStyle"
+                    style="@style/MoodStyleAlt"
 
                     android:layout_marginTop="5dp"
                     />
                 <Button
                     android:id="@+id/mainMenuMoodNAME3"
                     android:drawableTop="@drawable/mood_hold"
+                    android:drawableTint="@color/white"
                     android:text="Uninspired"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/MoodStyle"
+                    style="@style/MoodStyleAlt"
 
                     android:layout_marginTop="5dp"
                     />
                 <Button
                     android:id="@+id/mainMenuMoodNAME4"
                     android:drawableTop="@drawable/mood_hold"
+                    android:drawableTint="@color/white"
                     android:text="Remorseful"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/MoodStyle"
+                    style="@style/MoodStyleAlt"
                     />
                 <Button
                     android:id="@+id/mainMenuMoodNAME5"
                     android:drawableTop="@drawable/mood_hold"
-                    android:text="Mood"
+                    android:drawableTint="@color/white"
+                    android:text="Remorseful"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/MoodStyle"
-                    />
-                <Button
-                    android:id="@+id/mainMenuMoodNAME6"
-                    android:drawableTop="@drawable/mood_hold"
-                    android:text="Mood"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    style="@style/MoodStyle"
-                    />
-                <Button
-                    android:id="@+id/mainMenuMoodNAME7"
-                    android:drawableTop="@drawable/mood_hold"
-                    android:text="Mood"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    style="@style/MoodStyle"
+                    style="@style/MoodStyleAlt"
                     />
             </GridLayout>
         </RelativeLayout>
@@ -289,7 +284,7 @@
     <include
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        layout="@layout/extra_main"
+        layout="@layout/extra_main_alt"
         android:visibility="gone"
 
         android:layout_below="@id/topBarLayout"
@@ -301,6 +296,7 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:src="@drawable/settings"
+        android:tint="@color/lightBlue"
         android:visibility="gone"
 
         android:layout_alignParentBottom="true"

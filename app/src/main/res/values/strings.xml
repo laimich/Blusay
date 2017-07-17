@@ -31,8 +31,11 @@
     <string name="mainMenuReminderLabel">Reminders</string>
     <string name="mainMenuReminderContext">No current reminders\nend</string>
 
-    <string-array name="mainMenuMoodNames">
-        <item>Mood1</item>
+    <string-array name="mainMenuReminders">
+        <item>Reminder 1</item>
+        <item>Reminder 2</item>
+        <item>Reminder 3</item>
+        <item>Reminder 4</item>
     </string-array>
 
     <!-- mood selected screen -->
