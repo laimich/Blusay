@@ -30,6 +30,7 @@ public class Initial extends AppCompatActivity {
         enterLocalUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(Initial.this, MainMenu.class));
                 println("go to main screen with local info");
             }
         });

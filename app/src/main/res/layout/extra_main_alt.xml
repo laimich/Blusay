@@ -28,11 +28,9 @@
             >
             <ImageButton
                 android:id="@+id/settingsDescBackButton"
-                android:layout_width="40dp"
+                android:layout_width="10dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/back_arrow"
                 android:background="@null"
-                android:tint="@color/lightBlue"
 
                 android:layout_centerVertical="true"
                 />

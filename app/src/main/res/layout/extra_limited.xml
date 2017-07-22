@@ -107,7 +107,6 @@
             android:orientation="vertical"
             android:visibility="visible"
 
-            android:layout_toLeftOf="@id/settingsArrowLayout"
             android:layout_toRightOf="@id/settingsLogoLayout"
             android:layout_below="@id/settingsDescLayout"
             android:layout_marginBottom="20dp"
