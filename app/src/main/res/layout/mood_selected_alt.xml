@@ -4,16 +4,15 @@
     android:layout_height="match_parent"
     android:background="@color/darkBlue"
     >
-    <include layout="@layout/top_bar_alt"
-        android:id="@+id/topBarLayout"
-        />
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
 
-        android:layout_below="@id/topBarLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -296,4 +295,8 @@
             android:layout_below="@id/moodSelectInfoLevelsLabel"
             />
     </RelativeLayout>
+
+    <include layout="@layout/top_bar_alt"
+        android:id="@+id/topBarLayout"
+        />
 </RelativeLayout>

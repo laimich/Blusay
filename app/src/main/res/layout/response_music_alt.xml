@@ -15,7 +15,8 @@
         android:layout_height="match_parent"
         android:fillViewport="true"
 
-        android:layout_below="@id/topBarLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
         >
         <RelativeLayout
             android:layout_width="match_parent"
