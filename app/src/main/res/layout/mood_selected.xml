@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_main"
     >
     <include layout="@layout/top_bar"
         android:id="@+id/topBarLayout"
@@ -24,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/moodSelectedPrompt"
                 android:textSize="40sp"
-                android:textColor="@color/darkBlue"
+                android:textColor="@color/white"
                 android:textStyle="italic"
                 android:textAlignment="center"
 
@@ -47,26 +48,15 @@
                  show layout until re-click i or click outside the shown layout
                  -->
 
-            <ImageView
-                android:id="@+id/moodSelectTopDivider"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:src="@drawable/simple_line"
-
-                android:layout_below="@+id/moodSelectPrompt"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                />
-
             <TextView
                 android:id="@+id/moodSelectNoticeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/moodSelectedNoticeLabel"
-                android:textColor="@color/darkRed"
+                android:textColor="@color/lightBlue"
                 android:textSize="15sp"
 
-                android:layout_below="@+id/moodSelectTopDivider"
+                android:layout_below="@+id/moodSelectPrompt"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 />
@@ -110,16 +100,6 @@
                     -->
             </RelativeLayout>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:src="@drawable/simple_line"
-
-                android:layout_below="@id/moodSelectNoticeContentLayout"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                />
-
             <GridLayout
                 android:id="@+id/moodSelectResponseLayout"
                 android:layout_width="match_parent"
@@ -137,7 +117,7 @@
                     android:text="Set Reminder"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/MoodStyleAlt"
 
                     android:layout_marginTop="5dp"
                     />
@@ -147,7 +127,7 @@
                     android:text="Draw"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/MoodStyleAlt"
 
                     android:layout_marginTop="5dp"
                     />
@@ -157,7 +137,7 @@
                     android:text="Write Journal"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    style="@style/ResponseStyle"
+                    style="@style/MoodStyleAlt"
 
                     android:layout_marginTop="5dp"
                     />
