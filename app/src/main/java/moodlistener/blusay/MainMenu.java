@@ -19,7 +19,7 @@ public class MainMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_menu_alt);
+        setContentView(R.layout.main_menu);
 
         final ViewSwitcher settingSwitcher = (ViewSwitcher) findViewById(R.id.settingsMainSwitcher);
         final ViewSwitcher arrowSwitcher = (ViewSwitcher) findViewById(R.id.mainMenuReminderArrowSwitcher);

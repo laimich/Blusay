@@ -31,7 +31,7 @@ public class Initial extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Initial.this, MainMenu.class));
-                println("go to main screen with local info");
+                //println("go to main screen with local info");
             }
         });
 
