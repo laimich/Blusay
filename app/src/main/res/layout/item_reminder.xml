@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/reminderItemSwitchLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_alignParentRight="true"
+        >
+        <Switch
+            android:id="@+id/reminderItemSwitch"
+            style="@style/ReminderDisplaySwitch"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reminderItemCheckBoxLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/reminderItemSwitchLayout"
+        android:layout_marginRight="5dp"
+        >
+
+        <!-- for colors do white, lighterAuburn, lightBluem then grey -->
+        <CheckBox
+            android:id="@+id/reminderItemCheckBox"
+            android:text="Show above, title, priority, complete"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:buttonTint="@color/grey"
+            style="@style/ReminderCheckBox"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

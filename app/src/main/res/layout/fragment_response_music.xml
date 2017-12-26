@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/responseMusicPlayPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vector_play_circle"
+        android:backgroundTint="@color/teal"
+        style="@style/ResponseStyleAlt"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:id="@+id/responseMusicTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        android:layout_below="@id/responseMusicPlayPause"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/responseMusicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title of Song"
+        android:textColor="@color/lighterAuburn"
+        android:textSize="15sp"
+
+        android:layout_below="@id/responseMusicTimestamp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/responseMusicArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        android:layout_below="@id/responseMusicTitle"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
-package moodlistener.blusay;
+package moodlistener.blusay.activity;
 
+import moodlistener.blusay.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
@@ -11,40 +12,36 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ViewSwitcher;
 
-/**
- * Created by Michelle on 7/21/2017.
- */
-
-public class MainMenu extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_menu);
+        setContentView(R.layout.activity_home);
 
-        final ViewSwitcher settingSwitcher = (ViewSwitcher) findViewById(R.id.settingsMainSwitcher);
-        final ViewSwitcher arrowSwitcher = (ViewSwitcher) findViewById(R.id.mainMenuReminderArrowSwitcher);
-        final ViewSwitcher contentSwitcher = (ViewSwitcher) findViewById(R.id.mainMenuContentSwitcher);
+//        final ViewSwitcher settingSwitcher = (ViewSwitcher) findViewById(R.id.settingsMainSwitcher);
+        final ViewSwitcher arrowSwitcher = (ViewSwitcher) findViewById(R.id.homeReminderArrowSwitcher);
+        final ViewSwitcher contentSwitcher = (ViewSwitcher) findViewById(R.id.homeLayoutSwitcher);
 
         Animation slide_in_left = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
         Animation slide_out_right = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
 
-        settingSwitcher.setInAnimation(slide_in_left);
-        settingSwitcher.setOutAnimation(slide_out_right);
+//        settingSwitcher.setInAnimation(slide_in_left);
+//        settingSwitcher.setOutAnimation(slide_out_right);
+//
+//        ImageButton settingsButton = (ImageButton) findViewById(R.id.topBarSettings);
+//        settingsButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(settingSwitcher.getNextView() == null) {
+//                    settingSwitcher.showPrevious();
+//                }
+//                else {
+//                    settingSwitcher.showNext();
+//                }
+//            }
+//        });
 
-        ImageButton settingsButton = (ImageButton) findViewById(R.id.topBarSettings);
-        settingsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(settingSwitcher.getNextView() == null) {
-                    settingSwitcher.showPrevious();
-                }
-                else {
-                    settingSwitcher.showNext();
-                }
-            }
-        });
-
-        ImageButton downReminderArrow = (ImageButton) findViewById(R.id.mainMenuReminderDownArrow);
+        ImageButton downReminderArrow = (ImageButton) findViewById(R.id.homeReminderDownArrow);
         downReminderArrow.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +50,7 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        ImageButton upReminderArrow = (ImageButton) findViewById(R.id.mainMenuReminderUpArrow);
+        ImageButton upReminderArrow = (ImageButton) findViewById(R.id.homeReminderUpArrow);
         upReminderArrow.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {

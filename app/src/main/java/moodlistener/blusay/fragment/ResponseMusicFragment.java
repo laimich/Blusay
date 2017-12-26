@@ -1,5 +1,6 @@
-package moodlistener.blusay;
+package moodlistener.blusay.fragment;
 
+import moodlistener.blusay.R;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
@@ -18,12 +19,12 @@ import java.io.IOException;
 import static java.sql.DriverManager.println;
 
 
-public class ResponseMusic extends AppCompatActivity {
+public class ResponseMusicFragment extends AppCompatActivity {
 
     @Override @TargetApi(23)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.response_music_alt);
+//        setContentView(R.layout.activity_response_music);
 
         final MediaPlayer mp = new MediaPlayer();   //make static if have multi mp3 files to play
         ImageButton playPause = (ImageButton) findViewById(R.id.responseMusicPlayPause);     //this would be the button to play/stop
@@ -39,12 +40,12 @@ public class ResponseMusic extends AppCompatActivity {
 
                 if(mp.isPlaying())
                 {
-                    playReplay.setBackground(getDrawable(R.drawable.play_circle));
+                    playReplay.setBackground(getDrawable(R.drawable.vector_play_circle));
                     mp.stop();
                 }
 
                 try {
-                    playReplay.setBackground(getDrawable(R.drawable.replay_arrow));
+                    playReplay.setBackground(getDrawable(R.drawable.vector_replay_arrow));
                     mp.reset();
                     AssetFileDescriptor afd;
                     afd = getAssets().openFd("AudioFile.mp3");   //this is name of mp3 file in assets folder

@@ -30,7 +30,7 @@
                 android:id="@+id/settingsDescBackButton"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/back_arrow"
+                android:src="@drawable/vector_back_arrow"
                 android:background="@null"
                 android:tint="@color/lightBlue"
 

@@ -1,5 +1,6 @@
-package moodlistener.blusay;
+package moodlistener.blusay.activity;
 
+import moodlistener.blusay.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,16 +13,12 @@ import android.widget.TextView;
 
 import static java.sql.DriverManager.println;
 
-/**
- * Created by Michelle on 6/11/2017.
- */
-
-public class SignUp extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sign_up);
+        setContentView(R.layout.activity_sign_up);
 
 
         //for showing more info

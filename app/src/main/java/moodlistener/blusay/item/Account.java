@@ -1,4 +1,4 @@
-package moodlistener.blusay;
+package moodlistener.blusay.item;
 
 import java.util.ArrayList;
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/moodItem"
+        android:drawableTop="@drawable/mood_hold"
+        android:drawableTint="@color/white"
+        android:text="Mood name"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        style="@style/MoodStyleAlt"
+
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>

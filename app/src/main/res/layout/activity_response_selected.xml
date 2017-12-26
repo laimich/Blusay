@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    >
+    <include layout="@layout/fragment_top_bar"
+        android:id="@+id/topBarLayout"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/responseSelectPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prompt"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textAlignment="center"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageButton
+                android:id="@+id/responseSelectMoreInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/vector_more_info"
+                android:tint="@color/lightBlue"
+
+                android:layout_toRightOf="@id/responseSelectPrompt"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                />
+            <!-- if clicked,
+                 show layout until re-click i or click outside the shown layout
+                 -->
+
+            <ImageView
+                android:id="@+id/responseSelectDivider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/custom_simple_line"
+                android:tint="@color/teal"
+
+                android:layout_below="@+id/responseSelectPrompt"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/responseSelectDivider"
+                />
+            <!-- for the view, put one of the response fragments -->
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

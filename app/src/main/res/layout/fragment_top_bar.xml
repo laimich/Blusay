@@ -4,7 +4,6 @@
     android:id="@+id/topBarLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/teal"
 
     android:layout_alignParentTop="true"
     >
@@ -13,8 +12,8 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@null"
-        android:src="@drawable/settings"
-        android:tint="@color/darkGreen"
+        android:src="@drawable/vector_settings"
+        android:tint="@color/lightBlue"
 
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
@@ -27,7 +26,8 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@null"
-        android:src="@drawable/more_info"
+        android:src="@drawable/vector_more_info"
+        android:tint="@color/lightBlue"
 
         android:layout_centerHorizontal="true"
         />
@@ -37,7 +37,8 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@null"
-        android:src="@drawable/quick_memo"
+        android:src="@drawable/vector_quick_memo"
+        android:tint="@color/lightBlue"
 
         android:layout_marginRight="20dp"
         android:layout_marginEnd="20dp"

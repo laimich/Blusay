@@ -1,5 +1,6 @@
-package moodlistener.blusay;
+package moodlistener.blusay.model;
 
+import moodlistener.blusay.item.*;
 import java.util.ArrayList;
 
 /**
@@ -13,6 +14,6 @@ public class MoodModel {
     private String display; //can be "light" or "dark"
 
     //for saved info
-    private AccountUnlocked unlockedAccount;
-    private ArrayList<AccountLocked> lockedAccounts;
+    //private AccountUnlocked unlockedAccount;
+    //private ArrayList<AccountLocked> lockedAccounts;
 }

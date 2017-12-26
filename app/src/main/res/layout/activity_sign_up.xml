@@ -5,7 +5,7 @@
     android:background="@color/lightBlue"
     >
     <RelativeLayout
-        android:id="@+id/signUpScreenLabel"
+        android:id="@+id/signUpPromptLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:src="@drawable/more_info"
+            android:src="@drawable/vector_more_info"
 
             android:layout_toRightOf="@id/signUpPrompt"
             android:layout_marginLeft="2dp"
@@ -44,7 +44,7 @@
         android:textAlignment="center"
         android:visibility="invisible"
 
-        android:layout_below="@id/signUpScreenLabel"
+        android:layout_below="@id/signUpPromptLayout"
         android:layout_marginLeft="6dp"
         android:layout_marginRight="6dp"
         />
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
 
-        android:layout_below="@id/signUpScreenLabel"
+        android:layout_below="@id/signUpPromptLayout"
         android:layout_marginTop="90dp"
         android:layout_marginLeft="6dp"
         android:layout_marginRight="6dp"
@@ -159,6 +159,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/signUpConfirmButton"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Confirm"

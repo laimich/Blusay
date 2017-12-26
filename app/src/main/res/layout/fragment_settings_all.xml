@@ -144,49 +144,49 @@
             >
             <ImageButton
                 android:id="@+id/settingsArrow1"
-                android:src="@drawable/forward_arrow"
+                android:src="@drawable/vector_forward_arrow"
                 android:background="@color/darkBlue"
                 style="@style/SettingsLogoArrow"
                 android:tint="@color/lightBlue"
                 />
             <ImageButton
                 android:id="@+id/settingsArrow2"
-                android:src="@drawable/forward_arrow"
+                android:src="@drawable/vector_forward_arrow"
                 android:background="@color/darkBlue"
                 style="@style/SettingsLogoArrow"
                 android:tint="@color/lightBlue"
                 />
             <ImageButton
                 android:id="@+id/settingsArrow3"
-                android:src="@drawable/forward_arrow"
+                android:src="@drawable/vector_forward_arrow"
                 android:background="@color/darkBlue"
                 style="@style/SettingsLogoArrow"
                 android:tint="@color/lightBlue"
                 />
             <ImageButton
                 android:id="@+id/settingsArrow4"
-                android:src="@drawable/forward_arrow"
+                android:src="@drawable/vector_forward_arrow"
                 android:background="@color/darkBlue"
                 style="@style/SettingsLogoArrow"
                 android:tint="@color/lightBlue"
                 />
             <ImageButton
                 android:id="@+id/settingsArrow5"
-                android:src="@drawable/forward_arrow"
+                android:src="@drawable/vector_forward_arrow"
                 android:background="@color/darkBlue"
                 style="@style/SettingsLogoArrow"
                 android:tint="@color/lightBlue"
                 />
             <ImageButton
                 android:id="@+id/settingsArrow6"
-                android:src="@drawable/forward_arrow"
+                android:src="@drawable/vector_forward_arrow"
                 android:background="@color/darkBlue"
                 style="@style/SettingsLogoArrow"
                 android:tint="@color/lightBlue"
                 />
             <ImageButton
                 android:id="@+id/settingsArrow7"
-                android:src="@drawable/forward_arrow"
+                android:src="@drawable/vector_forward_arrow"
                 android:background="@color/darkBlue"
                 style="@style/SettingsLogoArrow"
                 android:tint="@color/lightBlue"
