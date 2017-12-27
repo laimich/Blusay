@@ -27,7 +27,7 @@
     <string name="signUpCheckConfirmButton">Confirm</string>
 
     <!-- main menu screen -->
-    <string name="mainMenuPrompt">How are you?</string>
+    <string name="mainMenuPrompt">How are you right now?</string>
     <string name="mainMenuReminderLabel">Reminders</string>
     <string name="mainMenuReminderContext">No current reminders\nend</string>
 

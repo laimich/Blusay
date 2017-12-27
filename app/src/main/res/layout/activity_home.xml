@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_try"
+    android:background="@drawable/background_main"
     >
 
     <ScrollView
@@ -22,12 +22,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/mainMenuPrompt"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/white"
                 android:textStyle="italic"
                 android:textAlignment="center"
-
-                android:layout_marginTop="5dp"
                 />
 
             <TextView
@@ -36,11 +34,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/mainMenuReminderLabel"
                 android:textColor="@color/lightBlue"
-                android:textSize="15sp"
+                android:textSize="12sp"
 
                 android:layout_below="@+id/homeTopLabel"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="15dp"/>
 
             <RelativeLayout
                 android:id="@+id/homeReminderLayout"
@@ -59,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/mainMenuReminderContext"
                     android:textColor="@color/grey"
-                    android:textSize="13sp"
+                    android:textSize="11sp"
                     android:textAlignment="center"
                     android:minLines="1"
                     android:maxLines="2"
