@@ -23,8 +23,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/moodSelectedDescLabel"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textColor="@color/darkGreen"
+            android:fontFamily="serif"
 
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
@@ -34,8 +35,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="This is the description\n.\n.\n.\nend"
-            android:textSize="13sp"
+            android:textSize="12sp"
             android:textAlignment="center"
+            android:fontFamily="serif"
 
             android:layout_centerHorizontal="true"
             android:layout_below="@id/moodInfoDescriptionLabel"
@@ -58,8 +60,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/moodSelectedLevelsLabel"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textColor="@color/darkGreen"
+            android:fontFamily="serif"
 
             android:layout_below="@id/moodInfoDivider"
             android:layout_centerHorizontal="true"

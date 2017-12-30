@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkGreen"
+    android:background="@drawable/background_main"
     >
     <include layout="@layout/fragment_top_bar"
         android:id="@+id/topBarLayout"
@@ -24,12 +24,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/moodSelectedPrompt"
-                android:textSize="30sp"
+                android:textSize="28sp"
                 android:textColor="@color/white"
                 android:textStyle="italic"
+                android:fontFamily="serif"
                 android:textAlignment="center"
 
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
                 />
 
             <ImageButton
@@ -38,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:src="@drawable/vector_more_info"
+                android:tint="@color/grey"
 
                 android:layout_toRightOf="@id/moodSelectPrompt"
                 android:layout_marginTop="10dp"
@@ -52,8 +55,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/moodSelectedNoticeLabel"
-                android:textColor="@color/lightBlue"
-                android:textSize="12sp"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                android:fontFamily="serif"
 
                 android:layout_below="@+id/moodSelectPrompt"
                 android:layout_centerHorizontal="true"
@@ -76,7 +80,8 @@
                     android:layout_height="30dp"
                     android:text="@string/moodSelectedNoticeDefault"
                     android:textColor="@color/grey"
-                    android:textSize="11sp"
+                    android:textSize="10sp"
+                    android:fontFamily="serif"
                     android:textAlignment="center"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
@@ -103,12 +108,19 @@
                 android:id="@+id/moodSelectResponseLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="3"
+                android:numColumns="3"
+                android:verticalSpacing="25dp"
+                android:horizontalSpacing="15dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:requiresFadingEdge="vertical"
+                android:fadingEdgeLength="60dp"
 
                 android:layout_below="@id/moodSelectNoticeLayout"
                 android:layout_centerHorizontal="true"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
                 />
 
         </RelativeLayout>

@@ -25,8 +25,11 @@ public class Mood {
         //Irritability
         //Distress
 
-    public Mood (String n, String i, Color c, String d, int cheer, int irrit, int dis)
-    {
+    public Mood () {
+
+    }
+
+    public Mood (String n, String i, Color c, String d, int cheer, int irrit, int dis) {
         name = n;
         icon = i;
         color = c;

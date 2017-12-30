@@ -14,7 +14,9 @@
         >
         <Switch
             android:id="@+id/reminderItemSwitch"
-            style="@style/ReminderDisplaySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             />
     </LinearLayout>
 
@@ -32,11 +34,15 @@
         <!-- for colors do white, lighterAuburn, lightBluem then grey -->
         <CheckBox
             android:id="@+id/reminderItemCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Show above, title, priority, complete"
             android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="serif"
             android:textAlignment="center"
             android:buttonTint="@color/grey"
-            style="@style/ReminderCheckBox"
+            android:maxLines="1"
             />
     </LinearLayout>
 

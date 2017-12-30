@@ -22,10 +22,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/mainMenuPrompt"
-                android:textSize="30sp"
+                android:textSize="28sp"
                 android:textColor="@color/white"
                 android:textStyle="italic"
+                android:fontFamily="serif"
                 android:textAlignment="center"
+
+                android:layout_marginTop="5dp"
                 />
 
             <TextView
@@ -33,8 +36,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mainMenuReminderLabel"
-                android:textColor="@color/lightBlue"
-                android:textSize="12sp"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                android:fontFamily="serif"
 
                 android:layout_below="@+id/homeTopLabel"
                 android:layout_centerHorizontal="true"
@@ -57,10 +61,12 @@
                     android:layout_height="wrap_content"
                     android:text="@string/mainMenuReminderContext"
                     android:textColor="@color/grey"
-                    android:textSize="11sp"
+                    android:textSize="10sp"
                     android:textAlignment="center"
+                    android:fontFamily="serif"
                     android:minLines="1"
                     android:maxLines="2"
+                    android:visibility="invisible"
 
                     android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
@@ -73,7 +79,6 @@
                     android:layout_height="wrap_content"
 
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@id/homeReminderText"
                     >
                     <ImageButton
                         android:id="@+id/homeReminderDownArrow"
@@ -81,7 +86,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/vector_down_arrow"
                         android:background="@null"
-                        android:tint="@color/lightBlue"
+                        android:tint="@color/grey"
                         />
 
                     <ImageButton
@@ -90,7 +95,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/vector_up_arrow"
                         android:background="@null"
-                        android:tint="@color/lightBlue"
+                        android:tint="@color/grey"
                         />
                 </ImageSwitcher>
             </RelativeLayout>
@@ -106,12 +111,19 @@
                     android:id="@+id/homeMoodLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:columnCount="3"
+                    android:numColumns="3"
+                    android:verticalSpacing="25dp"
+                    android:horizontalSpacing="15dp"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center"
                     android:visibility="visible"
+                    android:requiresFadingEdge="vertical"
+                    android:fadingEdgeLength="60dp"
 
                     android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginRight="10dp"
+                    android:layout_marginTop="35dp"
                     />
 
                 <ListView

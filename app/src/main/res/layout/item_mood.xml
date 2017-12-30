@@ -6,14 +6,18 @@
 
     <Button
         android:id="@+id/moodItem"
-        android:drawableTop="@drawable/mood_hold"
-        android:drawableTint="@color/white"
-        android:text="Mood name"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        style="@style/MoodStyleAlt"
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:background="@null"
+        android:drawableTint="@color/white"
+        android:drawableTop="@drawable/mood_hold"
+        android:fontFamily="serif"
+        android:maxWidth="20dp"
+        android:text="Mood name"
+        android:textAllCaps="false"
+        android:textColor="@color/lighterAuburn"
+        android:textSize="12sp" />
         />
 
 </RelativeLayout>

@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkBlue"
+    android:background="@color/black"
     >
     <include layout="@layout/fragment_top_bar"
         android:id="@+id/topBarLayout"
@@ -30,9 +30,11 @@
                 android:textSize="30sp"
                 android:textColor="@color/white"
                 android:textStyle="italic"
+                android:fontFamily="serif"
                 android:textAlignment="center"
 
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
                 />
 
             <ImageButton
@@ -41,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:src="@drawable/vector_more_info"
-                android:tint="@color/lightBlue"
+                android:tint="@color/grey"
 
                 android:layout_toRightOf="@id/responseSelectPrompt"
                 android:layout_marginTop="10dp"
@@ -56,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:src="@drawable/custom_simple_line"
-                android:tint="@color/teal"
+                android:tint="@color/lightBlue"
 
                 android:layout_below="@+id/responseSelectPrompt"
                 android:layout_marginLeft="30dp"

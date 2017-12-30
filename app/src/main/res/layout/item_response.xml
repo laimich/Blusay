@@ -6,14 +6,17 @@
 
     <Button
         android:id="@+id/responseItem"
-        android:drawableTop="@drawable/response_hold"
-        android:drawableTint="@color/white"
-        android:text="Response name"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        style="@style/MoodStyleAlt"
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        />
+        android:background="@null"
+        android:drawableTint="@color/white"
+        android:drawableTop="@drawable/response_hold"
+        android:fontFamily="serif"
+        android:maxWidth="20dp"
+        android:text="Response name"
+        android:textAllCaps="false"
+        android:textColor="@color/lighterAuburn"
+        android:textSize="12sp" />
 
 </RelativeLayout>

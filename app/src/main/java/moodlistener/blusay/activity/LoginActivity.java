@@ -23,8 +23,8 @@ public class LoginActivity extends AppCompatActivity {
         //test.setVisibility(View.GONE);
 
         //for continue as local user
-        Button enterLocalUser = (Button) findViewById(R.id.loginLocalUser);
-        enterLocalUser.setOnClickListener(new View.OnClickListener() {
+        Button enterUnlockedUser = (Button) findViewById(R.id.loginUnlockedUser);
+        enterUnlockedUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), HomeActivity.class));
@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
                 passwordSignUp.setVisibility(View.VISIBLE);
 
                 //Change the label for the bottom button for logging in
-                Button continueButton = (Button) findViewById(R.id.loginLocalUser);
+                Button continueButton = (Button) findViewById(R.id.loginUnlockedUser);
                 continueButton.setText("Log in");
                 continueButton.setOnClickListener(new View.OnClickListener() {
                     @Override

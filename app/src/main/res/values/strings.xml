@@ -5,7 +5,7 @@
     <!-- initial screen -->
     <string name="signInLabel">Password log in</string>
     <string name="signUpLabel">Password sign up</string>
-    <string name="localUserLabel">Continue as unlocked user</string>
+    <string name="unlockedUserLabel">Continue as unlocked user</string>
     <string name="passwordLogInPrompt">Enter username</string>
     <string name="passwordSignInPrompt">Enter password</string>
 
